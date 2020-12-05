@@ -227,9 +227,9 @@ main proc
         mov dl, platformaY                
         int 10h                      
                                       
-        mov ah, 9h                                      ;stampa platformu u vidu stringa
+        mov ah, 9h                                      
         mov dx, offset platforma   
-        mov bl, 4                                          ;crvene boje
+        mov bl, 4                                      
         int 21h
     ret
 
@@ -260,7 +260,7 @@ main proc
             mov ah, 9h                    
             mov dx, offset blok           
             int 21h                       
-            loop loop1					  ;    dekrementuje ch, kada ch dodje do nule izlazi iz petlje
+            loop loop1					
     ret
 
     printScore:                       
@@ -293,18 +293,17 @@ main proc
         int 21h                       
     ret                               
                       
-    printLives:                           
-       
-	    mov ah, 2h                        
+    printLives:                                
+        mov ah, 2h                        
         mov dh, zivotiX                    
         mov dl, zivotiY                    
         int 10h                           
         
-		mov ah, 9h						  
+	mov ah, 9h						  
         mov dx, offset zivoti 			  
         int 21h							  
         
-		mov cx, 3                         
+	mov cx, 3                         
         loopN:                            
             mov ah, 9h                    
             mov dx, offset zivot          
@@ -312,9 +311,8 @@ main proc
             loop loopN                    
     ret                                   
 
-    welcome:
-      
-   	    mov ah, 2h
+    welcome:     
+        mov ah, 2h
         mov dh, naslovX
         mov dl, naslovY
         int 10h
