@@ -209,7 +209,7 @@ main proc
 			moveUpRight:
 				sub lopticaX, 1            ; azuriraj kordinate za gore-desno
 				inc lopticaY               
-				jmp controlLimites
+				jmp controlLimit
 				
 			moveUpLeft:
 				sub lopticaX, 1            ; azuriraj kordinate za gore-levo
