@@ -147,11 +147,11 @@ main proc
 
 			
 			bounceLeftUp:
-				mov direccion, 1      ; azuriraj smer na gore-levo
+				mov dir1 1      ; azuriraj smer na gore-levo
 				jmp start
 				
 			bounceLeftDown:
-				mov direccion, 0      ; azuriraj smer na dole-levo
+				mov dir1, 0      ; azuriraj smer na dole-levo
 				jmp start
 				
 		 bounceDown:                                                      
